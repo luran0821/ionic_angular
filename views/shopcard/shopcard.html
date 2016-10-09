@@ -1,0 +1,49 @@
+<ion-view title="购物车" hide-Tabs="false" hide-back-button="true" style="background-color: #f8f8f8; padding: 0 1rem;">
+
+    <ion-nav-buttons side="right">
+       <button class="button button-icon  iconavicon" ng-click="buyall()"> 结算</button>
+    </ion-nav-buttons>
+    <!--<ion-nav-buttons side="left">
+         <button class=" button ion-ios-arrow-left babyblue iconavicon" ui-sref="tabs.home"></button>
+     </ion-nav-buttons>-->
+
+    <ion-content>
+        <ion-list>
+            <div class="cardbox" ng-show=demo ui-sref="tabs.share.commodity">
+                <div class=" cardboxc row">
+                    <div class="col-50">
+                        <img src="img/4.png" alt="">
+                    </div>
+                    <div class="col-50 cardboxa">
+                        <h2>请添去加商品</h2>
+
+                        <p>$2.039</p>
+
+                        <div class="cardboxnum"><a href="javascript:;">-</a><span>1</span><a href="javascript:;">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardbox" ng-repeat="item in productList.data |  unique: 'id'">
+                <div class=" cardboxc row">
+                    <div class="col-50">
+                        <img ng-src="img/{{item.img[0]}}" alt="">
+                    </div>
+                    <div class="col-50 cardboxa">
+                        <h2>{{item.dscb}}</h2>
+
+                        <p>{{item.price*item.number | currency :"￥"}}</p>
+
+                        <div class="cardboxnum"><a href="javascript:;"
+                                                   ng-click="down(item)">-</a><span>{{item.number}}</span><a
+                                href="javascript:;" ng-click="plus(item)">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </ion-list>
+    </ion-content>
+</ion-view>
+

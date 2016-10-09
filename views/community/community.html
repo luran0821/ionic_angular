@@ -1,0 +1,21 @@
+<ion-view title='社区' style="background-color: #F8F8F8" >
+    <ion-content>
+        <div class="list cardbox1 card" ng-repeat="item in restaurants"
+            ng-click="themego(item)">
+            <div class="item item-body colorc ">
+                <a class="rentou"href=""><img class="full-image" ng-src="img/{{item.img}}"></a>
+                <h2>{{item.themename}}</h2>
+                <p>{{item.topic}}</p>
+                <p class="like">
+                    <a href="javascript:;" class="subdued"><i class="icon ion-ios-heart-outline"
+                                                              style="color:red;font-weight: bold;"></i>{{item.likenum}} 赞</a>
+                    <a href="javascript:;" class="subdued"><i class="icon ion-ios-chatboxes-outline"></i>{{item.discussnum}} 人跟帖</a>
+                </p>
+            </div>
+        </div>
+        <ion-infinite-scroll on-infinite="getRestaurants()"
+                             ng-if="page<total"
+                             immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

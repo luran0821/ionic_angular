@@ -1,0 +1,21 @@
+<ion-view title="" hide-Tabs="true" >
+    <ion-nav-buttons side="right">
+       <button class="button  button-icon ion-ios-cart iconavicon "  ui-sref="tabs.shopcard"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <button class=" button  button-icon ion-ios-arrow-left babyblue iconavicon" ui-sref="tabs.share.commodity"></button>
+    </ion-nav-buttons>
+
+    <ion-content style="background-color: #f8f8f8">
+        <ion-list>
+            <div class="item item-avatar" ng-repeat="item in product.comment" style="margin: 1rem 0">
+                <img src=" img/man-1.png">
+
+                <h2>Pretty Hate Machine</h2>
+
+                <p>{{item}}</p>
+            </div>
+        </ion-list>
+    </ion-content>
+
+</ion-view>

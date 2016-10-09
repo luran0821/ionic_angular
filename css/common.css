@@ -1,0 +1,38 @@
+html{
+    font-family: "Microsoft YaHei UI" ;
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+li{
+    list-style: none;
+}
+img{
+    border: none;
+    border-radius: 0.3rem;
+}
+.wite{
+    color: #fff !important;
+}
+
+.orgin{
+    color: #FF6600 !important;
+}
+.babyblue{
+   background-color:   #56BAEC;
+    color: #fff;
+}
+.cool1{
+    background-color:  #4DC5D6;
+    color: #fff;
+}
+.cool2{
+    background-color:  #FFCC00;
+    color: #222;
+}
+.cool3{
+    background-color:  #AEECF7;
+    color:#FFC463;
+}

@@ -1,0 +1,10 @@
+.iconavicon .tab-title{
+    border:1px  #56BAEC  solid;
+}
+.nametab{
+    font-size: 1.1rem;
+    display: inline-block;
+    width: 10rem;
+    height: 4rem;
+    border:1px  #222  solid;
+}

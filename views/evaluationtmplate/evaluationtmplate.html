@@ -1,0 +1,76 @@
+<ion-view title="" hide-Tabs="true" ng-controller="scrollCtrl" hide-back-button="true">
+
+    <ion-nav-buttons side="left" >
+        <button class=" button  button-icon ion-ios-arrow-left babyblue iconavicon"
+                ui-sref="tabs.evaluation"></button>
+
+    </ion-nav-buttons>
+
+    <ion-content class="textcontent">
+        <ion-scroll direction="y" paging="true" ng-style="{width:getWidth(),height:getHeight()}">
+            <!--给定一个div，这个div的宽度，就是app的宽度；高度为所有页面的高度之和-->
+            <div ng-style="{height:getTotalHeight()}">
+                <!--page 1 : 第个页面的高度和宽度都和ionScroll一样 -->
+                <div class="scroll-page" ng-style="{width:getWidth(),height:getHeight()}">
+                    <!--使用一个header bar，像一个subheader-->
+                    <!--使用has-header来定位这个页面的内容-->
+                    <div >
+                        <div class="headimg">
+                            <img ng-src="img/{{product.img[1]}}">
+                        </div>
+                        <p>{{product.text[0]}}</p>
+                    </div>
+
+                    <!--// 提示箭头-->
+                    <span class="icon ion-arrow-up-c arror" ng-style="{left:getArrorLeft(),top:getArrorTop()}"></span>
+                </div>
+
+                <!--page 2-->
+                <div class="scroll-page " ng-style="{width:getWidth(),height:getHeight()}">
+
+
+                    <div>
+                        <div class="headimg">
+                            <img ng-src="img/{{product.img[2]}}">
+                        </div>
+                        <p>{{product.text[1]}}</p>
+                    </div>
+                </div>
+
+                <!--page 3-->
+                <div class="scroll-page" ng-style="{width:getWidth(),height:getHeight()}">
+
+
+                    <div>
+                        <div class="headimg">
+                            <img ng-src="img/{{product.img[3]}}">
+                        </div>
+                        <p>{{product.text[2]}}</p>
+                    </div>
+                </div>
+                <!--page 4-->
+                <div class="scroll-page " ng-style="{width:getWidth(),height:getHeight()}">
+
+                    <div>
+                        <div class="headimg">
+                            <img ng-src="img/{{product.img[4]}}">
+                        </div>
+                        <p>{{product.text[3]}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </ion-scroll>
+    </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+</ion-view>

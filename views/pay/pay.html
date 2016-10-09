@@ -1,0 +1,26 @@
+<ion-view title=" " hide-Tabs="true" hide-back-button="true">
+    <ion-nav-buttons side="left" >
+        <button class=" button   button-icon ion-ios-arrow-left babyblue iconavicon"
+                ui-sref="tabs.shopcard"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list" style="font-size: 1.4rem; color:#eee">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">单价</span><br>
+                <span class="input-label">{{buyit.price}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">数量</span><br>
+                <span class="input-label">{{buyit.number}}</span>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">总金额</span><br>
+                <span class="input-label">{{buyit.price||total}}</span>
+            </label>
+        </div>
+
+        <button class="button  boxrad">
+            付款
+        </button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+.cardbox {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    border: 0.1rem #eee solid;
+    padding: 0;
+    float: left;
+    margin: 0.5rem;
+
+}
+.cardboxa{
+    padding-top:3rem;
+}
+
+.cardboxc {
+
+    margin-right: 0.4rem;
+}
+
+.cardbox img {
+    width: 100%;
+    height: 12rem;
+}
+
+.cardbox h2 {
+    font-size: 1.4rem;
+}
+
+.cardboxnum {
+    height: 2.5rem;
+    line-height: 2rem;
+
+}
+
+.cardboxnum span {
+    padding: 0 2rem;
+    font-size: 1.4rem;
+}
+
+.cardboxnum a {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    line-height: 2rem;
+    width: 3rem;
+    height: 2rem;
+    font-size: 1.4rem;
+}

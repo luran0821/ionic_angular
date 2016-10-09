@@ -1,0 +1,37 @@
+<ion-view title=""  hide-Tabs="true" hide-back-button="true">
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon ion-ios-cart iconavicon" ui-sref="tabs.shopcard"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <button class=" button  button-icon ion-ios-arrow-left babyblue iconavicon"
+                ui-sref="tabs.share.commodity"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-slide-box does-continue="true" slide-interval="2500" show-pager="false"
+                       style="height:28rem;width: 100%">
+            <ion-slide>
+                <div class="box"><img ng-src="img/{{product.img[0]}}"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="img/{{product.img[1]}}"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="img/{{product.img[2]}}"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <p></p>
+        <h2 class="productdscb">{{product.dscb}}</h2>
+
+        <h2></h2>
+
+        <div class="productprice">{{product.price | currency:"￥"}}</div>
+    </ion-content>
+    <ion-footer-bar style="background-image: none">
+        <div class="row positionbox">
+
+            <div class="col-40 add" ng-click="add()">加入购物车</div>
+            <div class="col-40 buy" ng-click="buy()">立即购买</div>
+        </div>
+    </ion-footer-bar>
+</ion-view>

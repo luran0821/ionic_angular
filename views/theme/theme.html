@@ -1,0 +1,45 @@
+<ion-view hide-Tabs="true" title=" " style="background-color: #F8F8F8">
+    <ion-content>
+        <div class="list cardbox1 card">
+            <div class="item item-body colorc ">
+                <a class="rentou" href=""><img class="full-image" ng-src="img/{{item.img}}"></a>
+
+                <h2>{{item.themename}} <i class="icon ion-ios-flame"> 楼主</i></h2>
+
+                <p>{{item.topic}}</p>
+
+                <p class="like">
+                    <a href="javascript:;" class="subdued"
+                    ng-click="like(item)"
+                    ><i class="icon ion-ios-heart-outline"
+                                                              style="color:red;font-weight: bold;"></i>{{item.likenum}}
+                        赞</a>
+                    <a href="javascript:;" class="subdued"><i class="icon ion-ios-chatboxes-outline"></i>{{item.discussnum}}
+                        人跟帖</a>
+                </p>
+            </div>
+
+        </div>
+        <ion-list>
+            <div class="list cardbox1 card" ng-repeat="it in item.follow">
+                <div class="item item-body colorc ">
+                    <a class="rentou" href=""><img class="full-image" ng-src="img/{{it.img}}"></a>
+
+                    <h2>{{it.name}}</h2>
+
+                    <p>{{it.reply}}</p>
+
+                    <p class="like">
+                        <a href="javascript:;" class="subdued"
+                           ng-click="likef(it)"
+
+                        ><i class="icon ion-ios-heart-outline" style="color:red;font-weight: bold;"></i>{{it.likenuk}}赞</a>
+                        <a href="javascript:;" class="subdued"><i class="icon ion-ios-chatboxes-outline"></i>{{item.discussnum}}
+                            人跟帖</a>
+                    </p>
+                </div>
+            </div>
+
+        </ion-list>
+    </ion-content>
+</ion-view>

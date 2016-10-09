@@ -1,0 +1,21 @@
+<ion-view title='二手交易' show-Tabs>
+    <ion-content style="background-color: #f8f8f8; padding: 0 1rem;">
+        <div class="col colheight" ng-repeat="item in data.productList.shoplist"
+             ng-click="toDetail(item)"
+        >
+
+                <div class="barcolor"></div>
+                <div class="item item-body">
+                    <a href=""><img class="full-image" ng-src="img/{{item.img[0]}}"></a>
+
+                    <p>
+                        {{item.dscb}}
+                    </p>
+                </div>
+
+            </div>
+
+
+
+    </ion-content>
+</ion-view>

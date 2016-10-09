@@ -1,0 +1,53 @@
+.subdued i{
+    margin-right: 0.8rem;
+
+}
+.cardbox1{
+padding:0;
+}
+.cardbox1 h2,.cardbox1 p {
+    margin: 0;
+
+}
+.cardbox1 p{
+    text-indent:0.2rem;
+}
+.colorc{
+    padding-left: 1rem;
+}
+.colorc .rentou{
+   display: inline-block;
+    width: 4rem;
+    height: 4rem;
+}
+.like{
+    padding-left: 40%;
+}
+.colorc1{
+
+    background: url(../../img/1c_12.png) left center repeat-y;
+}
+.colorc2{
+
+    background: url(../../img/1c_06.png) left center repeat-y;
+}
+.colorc3{
+
+    background: url(../../img/1c_08.png) left center repeat-y;
+}
+.colorc4{
+
+    background: url(../../img/1c_10.png) left center repeat-y;
+}
+.colorc5{
+
+    background: url(../../img/1c_12.png) left center repeat-y;
+}
+.colorc6{
+
+    background: url(../../img/1c_14.png) left center repeat-y;
+}
+.colorc7{
+
+    background: url(../../img/1c_16.png) left center repeat-y;
+}

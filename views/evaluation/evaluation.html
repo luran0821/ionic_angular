@@ -1,0 +1,21 @@
+<ion-view title="测评" hide-back-button="true">
+
+    <ion-content>
+
+        <div class="box1" ng-repeat="item in restaurants"
+             ng-click="toDetail(item)"
+        >
+
+            <a href=""><img ng-src="img/{{item.img[0]}}"></a>
+
+            <div class="boxtitle">
+                <h2>{{item.title}}</h2>
+            </div>
+        </div>
+        <ion-infinite-scroll on-infinite="getRestaurants()"
+                             ng-if="page<total"
+                             immediate-check="false">
+        </ion-infinite-scroll>
+
+    </ion-content>
+</ion-view>

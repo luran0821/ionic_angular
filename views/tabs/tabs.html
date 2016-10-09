@@ -1,0 +1,23 @@
+<ion-view >
+
+    <ion-tabs class="tabs-standard tabs-icon-top  tabs-positie  "
+              ng-class="{'tabs-item-hide': $root.hideTabs}">
+        <ion-tab  title="Home" icon-on="ion-headphone" icon-off="ion-headphone"
+                 ui-sref="tabs.home">
+            <ion-nav-view name="tab-home"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  title="测评" icon-on="ion-star" icon-off="ion-star"
+                 ui-sref="tabs.evaluation">
+            <ion-nav-view name="tab-evaluation"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  title="购物车" icon-on="icon ion-ios-cart-outline" badge=badgeValue
+                  icon-off="icon ion-ios-cart"
+                 ui-sref="tabs.shopcard">
+            <ion-nav-view name="tab-shopcard"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  title="分享" icon-on="icon ion-aperture" icon-off="icon ion-aperture"
+                 ui-sref="tabs.share.commodity">
+            <ion-nav-view name="tab-share"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

@@ -1,0 +1,22 @@
+.positionbox{
+
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding:0;
+}
+.add{
+    background-color:#ff9402 ;
+    color: #fff;
+    height: 100%;
+}
+.buy{
+    background-color: #dd2727;
+    color: #fff;
+    height: 100%;
+}
+
+

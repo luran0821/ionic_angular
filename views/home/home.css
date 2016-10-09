@@ -1,0 +1,30 @@
+.box{
+    width: 100%;
+    height: 100%;
+}
+.itema a{
+    display: block;
+    width: 100%;
+    border: none;
+    margin:0 2% 1%;
+    text-align: center;
+
+}
+.itema a img{
+    width: 5rem;
+}
+.itemb a{
+    border: none;
+}
+.itema a p{
+    width: 100%;
+    font-size: 1rem;
+}
+.lik{
+    position: absolute;
+    right: 2rem;
+    font-size: 1rem;
+}
+.shopms{
+    height: 30rem;
+}
